@@ -1,0 +1,72 @@
+.col-2{
+    float: left;
+    width: 100%;
+    text-align: center;
+    border-radius: 25px;
+    background: rgb(139, 177, 247);
+    border: 2px solid rgb(75, 74, 74);
+    margin-left: 2px;
+}
+#cityHeader{
+    font-weight: lighter;
+}
+#heading{
+    text-align: center;
+    height: 250px;
+}
+#fiveDayForecast{
+    margin-left: 25%;
+}
+#searches{
+    float: right;
+    background: #f8f8f8;
+}
+.container{
+    margin: 0%;
+    padding: 0px;
+}
+.date{
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.windText{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+#fiveDayForecast{
+    margin-bottom: 25px;
+}
+#weatherInfo{
+    display: none;
+}
+
+.btn-light{
+    width: 100%;
+}
+#todaysWeather.row{
+    text-align: center;
+}
+
+#inline{
+    margin-left: 25%;
+}
+@media (min-width: 576px) {
+.col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+}
+#city{
+    width:100%;
+}
+#submit{
+    width: 100%;
+}
+#recent{
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    background: #e2e3e6;
+}

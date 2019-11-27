@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+​
+
+<head>
+    <title>National Weather & Forecast</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+​
+
+<body>
+    <div class="jumbotron jumbotron-fluid" id="heading">
+        <h1 class="display-4" id="docHeading">Weather Dashboard</h1>
+        <h2 id="cityHeader"></h2>
+        <p class="lead" id="dateDisplay"></p>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3" id="searches">
+                <div class="row">
+                    <input type="text" id="city" placeholder="Search by city"></input>
+                    <button class="btn btn-secondary" id="submit">Submit</button>
+                </div>
+                <div class="row" id="citiesDiv">
+                    <table class="table">
+                        <thead>
+                            <tr id="tableHead">
+                                <th scope="col" id="recent">Recent Searches</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-9" id="weatherInfo">
+                <div class="row" id="todaysWeather">
+                    <div id="inline">
+                        <div id="lowDiv"></div>
+                        <div id="highDiv"></div>
+                        <div id="humidity"></div>
+                        <div id="windSpeed"></div>
+                        <div id="description"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 id="fiveDayForecast">5-Day Forecast</h2>
+                </div>
+                <div class="row">
+                    <div id="day1" class="col-2">
+                        <h5 id="day4_date"></h5>
+                        <h4 id="day4_temp"></h4>
+                        <img src="" id="icon4">
+                        <div id="day4_humidity"></div>
+                        <div id="day4_wind"></div>
+                    </div>
+                    <div id="day2" class="col-2">
+                        <h5 id="day12_date"></h5>
+                        <h4 id="day12_temp"></h4>
+                        <img src="" id="icon12">
+                        <div id="day12_humidity"></div>
+                        <div id="day12_wind"></div>
+                    </div>
+                    <div id="day3" class="col-2">
+                        <h5 id="day20_date"></h5>
+                        <h4 id="day20_temp"></h4>
+                        <img src="" id="icon20">
+                        <div id="day20_humidity"></div>
+                        <div id="day20_wind"></div>
+                    </div>
+                    <div id="day4" class="col-2">
+                        <h5 id="day28_date"></h5>
+                        <h4 id="day28_temp"></h4>
+                        <img src="" id="icon28">
+                        <div id="day28_humidity"></div>
+                        <div id="day28_wind"></div>
+                    </div>
+                    <div id="day5" class="col-2">
+                        <h5 id="day36_date"></h5>
+                        <h4 id="day36_temp"></h4>
+                        <img src="" id="icon36">
+                        <div id="day36_humidity"></div>
+                        <div id="day36_wind"></div>
+                    </div>
+                </div>
+            </div> ​
+        </div>
+    </div>
+    ​
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+​
+
+</html
